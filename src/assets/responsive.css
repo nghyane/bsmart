@@ -1,0 +1,320 @@
+/* Laptop */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .sidebar-wrap {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+
+    /* Wrapper */
+    .wrapper {
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    /* ------------------------ */
+    /* Header */
+    .header-top {
+        display: none;
+    }
+
+    .header-bottom {
+        display: none;
+    }
+
+    .header-mobile-content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 4px;
+    }
+
+    .header-mobile-content .header-mobile-logo {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .header-mobile-content .header-mobile-menu-hambuger {
+        font-size: 25px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    /* ------------------------ */
+    /* Sidebar mobile */
+    .sidebar-wrap {
+        display: block;
+        position: fixed;
+        z-index: 9999;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        -webkit-transition: all 0.5s ease-out 0s;
+        transition: all 0.5s ease-out 0s;
+        width: 100%;
+        height: 100%;
+        right: -100%;
+    }
+
+    .sidebar-wrap .sidebar-content {
+        padding: 20px;
+        width: 290px;
+        background-color: #fff;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        /* overflow-y: scroll; */
+    }
+
+    .sidebar-wrap .sidebar-content .sidebar-top {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+
+    .sidebar-wrap .sidebar-content .sidebar-top .sidebar-logo {
+        font-weight: 700;
+        color: #130f40;
+        font-size: 30px;
+        /* line-height: 1.42857143; */
+    }
+
+    .sidebar-wrap .sidebar-content .sidebar-top i {
+        font-size: 30px !important;
+    }
+
+    .sidebar-wrap .sidebar-content .sidebar-center {
+        padding-top: 20px;
+    }
+
+    .sidebar-wrap .sidebar-content .sidebar-mean-nav li {
+        padding: 12px 0;
+        border-top: 1px solid #ebebeb;
+        position: relative;
+    }
+
+    .sidebar-wrap .sidebar-content .sidebar-mean-nav li:last-child {
+        border-bottom: none;
+    }
+
+    .sidebar-wrap .sidebar-content .sidebar-mean-nav li:first-child {
+        border-top: none;
+    }
+
+    .sidebar-wrap .sidebar-content .sidebar-mean-nav li a:first-child {
+        font-size: 16px;
+        font-weight: 600;
+        color: #130f40;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .sidebar-wrap .sidebar-content .sidebar-mean-nav li .sub-menu {
+        display: none;
+        width: 90%;
+    }
+
+    .sidebar-wrap .sidebar-content .sidebar-mean-nav li .mean-expand {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 12px;
+        font-size: 16px;
+        color: #130f40;
+    }
+
+    .sidebar-wrap .sidebar-content .sidebar-bottom .search-course {
+        margin: 20px 0 25px;
+        position: relative;
+    }
+
+    .sidebar-wrap .sidebar-content .sidebar-bottom .search-course input {
+        padding: 10px 30px 10px 10px;
+    }
+
+    .sidebar-wrap .sidebar-content .sidebar-bottom .search-course span {
+        position: absolute;
+        right: 10px;
+        top: 15px;
+    }
+
+    .sidebar-wrap .sidebar-content .sidebar-bottom .contact-info i {
+        margin-right: 10px;
+        color: #ff630e;
+    }
+
+    .sidebar-wrap .sidebar-content .sidebar-bottom .social-list {
+        margin: 20px 0;
+    }
+
+    .sidebar-wrap .sidebar-content .sidebar-bottom .social-list li {
+        margin-right: 10px;
+        display: inline-block;
+    }
+
+    .sidebar-wrap .sidebar-content .sidebar-bottom .social-list li a {
+        color: #130f40;
+    }
+
+    .sidebar-wrap .sidebar-content .sidebar-bottom .sidebar-controls li {
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+    .sidebar-wrap .sidebar-content .sidebar-bottom .sidebar-controls li a {
+        color: #130f40;
+        color: 16px;
+    }
+
+    /* ------------------------ */
+    /* Banner */
+    .banner {
+        padding: 0;
+    }
+
+    .banner .caption-content {
+        padding: 100px 0px;
+    }
+
+    .banner .caption-content h4 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .banner .caption-content h2 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .banner .caption-content p {
+        padding: 0;
+    }
+
+    .banner .caption-content .btn-primary-custom {
+        padding: 14px 20px;
+        font-size: 14px;
+    }
+
+    .banner .caption-content .btn-outline-secondary-custom {
+        padding: 14px 20px;
+        font-size: 14px;
+    }
+
+    /* ------------------------ */
+    /* About us */
+    .aboutus {
+        padding: 100px 0;
+    }
+
+    .aboutus .about-description {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .aboutus .btn-primary-custom {
+        padding: 14px 20px;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .aboutus .btn-outline-secondary-custom {
+        padding: 14px 20px;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .section-heading {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 25px;
+    }
+
+    /* ------------------------ */
+    /* Advantages */
+    .advantages {
+        padding-bottom: 80px;
+    }
+
+    .advantages .section-heading {
+        text-align: center !important;
+    }
+
+    /* ------------------------ */
+    /* Learning path */
+    .learning-path .left-section {
+        -webkit-clip-path: none;
+        clip-path: none;
+        margin-bottom: 10px;
+    }
+
+    .learning-path .right-section {
+        -webkit-clip-path: none;
+        clip-path: none;
+        margin-bottom: 10px;
+    }
+
+    /* ------------------------ */
+    /* Course section */
+    .courses-section .courses-content .item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    /* ------------------------ */
+    /* Testimonial-content */
+    .testimonial-content .item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .testimonial-content .card-custom {
+        width: 100% !important;
+    }
+
+    /* ------------------------ */
+    /* Advantages-2 */
+    .advantages-2 .btn-outline-secondary-custom {
+        padding: 14px 20px;
+        font-size: 14px;
+    }
+
+    .advantages-2 .btn-primary-custom {
+        padding: 14px 10px;
+        font-size: 14px;
+    }
+
+    /* ------------------------ */
+    /* Contacts section */
+    .contacts-section .form-contact-container {
+        margin-top: 15px;
+    }
+
+    /* ------------------------ */
+    /* Footer */
+    /* ------------------------ */
+}
