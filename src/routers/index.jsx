@@ -6,7 +6,7 @@ import AboutUs from '../pages/AboutUs';
 import CourseList from '../pages/CourseList';
 import MentorProfile from '../pages/MentorProfile';
 import LearningManagementSystem from '../pages/LearningManagementSystem';
-import Blog from '../pages/Blog';   
+import Blog from '../pages/BlogList';   
 import CourseDetails from '../pages/CourseDetails';
 import Login from '../pages/Login';
 import Register from '../pages/Register';
