@@ -1,0 +1,13 @@
+.btn-re{
+    border: none;
+    background-color: #f5f5f5;
+    padding: 10px 125px;
+    color: #ff630e;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.active-login{
+    background-color: #ff630e;
+    color: white;
+}
