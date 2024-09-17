@@ -239,12 +239,38 @@
         font-size: 14px;
         margin-bottom: 20px;
     }
+   
 
+.banner__aboutus {
+    background-image: url('assets/images/backgoundAbout.png');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+    color: white;
+    text-align: center;
+  }
+    
     .section-heading {
         font-size: 40px;
         line-height: 50px;
         margin-bottom: 25px;
     }
+    .caption-content {
+    
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 100px 0;
+        color: white;
+      }
+      
+      .banner__aboutus h2, .banner__aboutus p {
+        color: white; 
+      }
+      .container{
+        margin:10
+      }
+      
 
     /* ------------------------ */
     /* Advantages */
@@ -313,6 +339,7 @@
     .contacts-section .form-contact-container {
         margin-top: 15px;
     }
+
 
     /* ------------------------ */
     /* Footer */
