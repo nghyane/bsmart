@@ -30,7 +30,7 @@ const AboutUs = () => {
                   Câu chuyện của một nhóm người với đam mê lập trình bất tận
                 </h1>
                 <br />
-                <p className="write-1">
+                <p className="write-1 fs-4 text-end">
                   Từ việc nhận thấy được sự khó khăn, gặp rào cản về vấn đề học tập cũng như bằng cấp của một số bạn có định hướng, đam mê về lập trình, BSmart đã tạo nên một cộng đồng cho mọi đối tượng, mọi lứa tuổi, kết nối các bạn có cùng đam mê, cùng thắc mắc để cùng phát triển...
                 </p>
               </div>
