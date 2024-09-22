@@ -7,6 +7,7 @@ import CourseList from '../pages/CourseList';
 import MentorProfile from '../pages/MentorProfile';
 import LearningManagementSystem from '../pages/LearningManagementSystem';
 import Blog from '../pages/BlogList';   
+import BlogDetail from '../pages/BlogDetail';   
 import CourseDetails from '../pages/CourseDetails';
 import Login from '../pages/Login';
 import Register from '../pages/Register';
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
             {
                 path: "/blog",
                 element: <Blog />,
+            },
+            {
+                path: "/blog-detail",
+                element: <BlogDetail />
             },
             {
                 path: "/course/:courseId",
