@@ -1,47 +1,56 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const BlogPage = () => {
   const blogPosts = [
     {
       id: 1,
-      title: 'Tìm hiểu phát triển ứng dụng web từ các chuyên gia',
-      date: '12/30/2023',
-      category: 'Lập trình & thiết kế web',
-      image: 'assets/images/blog-member.jpg',
-      excerpt: 'Điều quan trọng là phải có một dịch vụ khách hàng tốt, một nhà cung cấp dịch vụ khách hàng. Hendrerit của Hạm đội Xe tải trẻ em không có thùng. Trong trừ khi hoặc, xe tải hoặc, protein đó, bất động sản hoặc, trừ khi. Nhưng giá cả, ligula sollicitudin laoreet viverra, tra tấn các thành viên libero leo, eget nhạt nhẽo bây giờ tra tấn eu nibh. Không mềm. Cứ như vậy. điện thoại thông minh Nhưng nhu cầu, trước khi và vulutate volutpat, eros pede [...]',
+      title: "Tìm hiểu phát triển ứng dụng web từ các chuyên gia",
+      date: "12/30/2023",
+      category: "Lập trình & thiết kế web",
+      image: "assets/images/blog-member.jpg",
+      excerpt:
+        "Điều quan trọng là phải có một dịch vụ khách hàng tốt, một nhà cung cấp dịch vụ khách hàng. Hendrerit của Hạm đội Xe tải trẻ em không có thùng. Trong trừ khi hoặc, xe tải hoặc, protein đó, bất động sản hoặc, trừ khi. Nhưng giá cả, ligula sollicitudin laoreet viverra, tra tấn các thành viên libero leo, eget nhạt nhẽo bây giờ tra tấn eu nibh. Không mềm. Cứ như vậy. điện thoại thông minh Nhưng nhu cầu, trước khi và vulutate volutpat, eros pede [...]",
     },
     {
       id: 2,
-      title: 'Tìm hiểu phát triển ứng dụng web từ các chuyên gia',
-      date: '12/30/2023',
-      category: 'Lập trình & thiết kế web',
-      image: 'assets/images/blog-member.jpg',
-      excerpt: 'Điều quan trọng là phải có một dịch vụ khách hàng tốt, một nhà cung cấp dịch vụ khách hàng. Hendrerit của Hạm đội Xe tải trẻ em không có thùng. Trong trừ khi hoặc, xe tải hoặc, protein đó, bất động sản hoặc, trừ khi. Nhưng giá cả, ligula sollicitudin laoreet viverra, tra tấn các thành viên libero leo, eget nhạt nhẽo bây giờ tra tấn eu nibh. Không mềm. Cứ như vậy. điện thoại thông minh Nhưng nhu cầu, trước khi và vulutate volutpat, eros pede [...]',
+      title: "Tìm hiểu phát triển ứng dụng web từ các chuyên gia",
+      date: "12/30/2023",
+      category: "Lập trình & thiết kế web",
+      image: "assets/images/blog-member.jpg",
+      excerpt:
+        "Điều quan trọng là phải có một dịch vụ khách hàng tốt, một nhà cung cấp dịch vụ khách hàng. Hendrerit của Hạm đội Xe tải trẻ em không có thùng. Trong trừ khi hoặc, xe tải hoặc, protein đó, bất động sản hoặc, trừ khi. Nhưng giá cả, ligula sollicitudin laoreet viverra, tra tấn các thành viên libero leo, eget nhạt nhẽo bây giờ tra tấn eu nibh. Không mềm. Cứ như vậy. điện thoại thông minh Nhưng nhu cầu, trước khi và vulutate volutpat, eros pede [...]",
     },
   ];
 
   return (
     <div className="wrapper blog-wrapper">
-      <header className="header-main">
-        {/* Add header content here */}
-      </header>
+      <header className="header-main">{/* Add header content here */}</header>
 
       <section className="blog-area two">
         <div className="container">
           <div className="row">
             <div className="col-md-8 all-posts-wrap col-sm-12">
               <div className="blog-posts">
-                {blogPosts.map(post => (
+                {blogPosts.map((post) => (
                   <div key={post.id} className="blog-posts">
                     <div className="blog-post-thumb">
                       <img src={post.image} alt="image" className="img-fluid" />
                     </div>
                     <div className="blog-posts-meta mt-3">
                       <ul>
-                        <li><i className="fa fa-user"></i><a href="#">BSmart</a></li>
-                        <li><i className="fa fa-calendar"></i><a href="#">{post.date}</a></li>
-                        <li><i className="fa fa-tags"></i><a href="#">{post.category}</a></li>
+                        <li>
+                          <i className="fa fa-user"></i>
+                          <a href="#">BSmart</a>
+                        </li>
+                        <li>
+                          <i className="fa fa-calendar"></i>
+                          <a href="#">{post.date}</a>
+                        </li>
+                        <li>
+                          <i className="fa fa-tags"></i>
+                          <a href="#">{post.category}</a>
+                        </li>
                       </ul>
                     </div>
                     <h3>
@@ -50,8 +59,12 @@ const BlogPage = () => {
                     <div className="entry-content">
                       <p>{post.excerpt}</p>
                       <div>
-                      <Link to="/blog-detail" className="btn btn-primary-custom p-2">Đọc thêm</Link>
-
+                        <Link
+                          to="/blog-detail"
+                          className="btn btn-primary-custom p-2"
+                        >
+                          Đọc thêm
+                        </Link>
                       </div>
                     </div>
                     <hr />
@@ -59,11 +72,21 @@ const BlogPage = () => {
                 ))}
                 <div className="blog-pagination text-center">
                   <ul>
-                    <li><a href="#" className="active">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
                     <li>
-                      <a href="#"><i className="fa fa-angle-right"></i></a>
+                      <a href="#" className="active">
+                        1
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">2</a>
+                    </li>
+                    <li>
+                      <a href="#">3</a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i className="fa fa-angle-right"></i>
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -78,7 +101,9 @@ const BlogPage = () => {
                       placeholder="Tìm kiếm bài viết..."
                       className="form-control"
                     />
-                    <button type="submit"><i className="fa fa-search"></i></button>
+                    <button type="submit">
+                      <i className="fa fa-search"></i>
+                    </button>
                   </form>
                 </div>
 
@@ -91,7 +116,12 @@ const BlogPage = () => {
                           Tìm hiểu phát triển ứng dụng web từ các chuyên gia
                         </a>
                       </h6>
-                      <p className="recent-post-date mt-2" style={{ fontSize: '0.7rem !important' }}>12/30/2023</p>
+                      <p
+                        className="recent-post-date mt-2"
+                        style={{ fontSize: "0.7rem !important" }}
+                      >
+                        12/30/2023
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -100,22 +130,34 @@ const BlogPage = () => {
                   <h4>Thể loại</h4>
                   <ul className="widget-list">
                     <li>
-                      <a href="#"><i className="fa fa-angle-right"></i> Kinh doanh</a>
+                      <a href="#">
+                        <i className="fa fa-angle-right"></i> Kinh doanh
+                      </a>
                     </li>
                     <li>
-                      <a href="#"><i className="fa fa-angle-right"></i> Khoa học</a>
+                      <a href="#">
+                        <i className="fa fa-angle-right"></i> Khoa học
+                      </a>
                     </li>
                     <li>
-                      <a href="#"><i className="fa fa-angle-right"></i> Giáo dục</a>
+                      <a href="#">
+                        <i className="fa fa-angle-right"></i> Giáo dục
+                      </a>
                     </li>
                     <li>
-                      <a href="#"><i className="fa fa-angle-right"></i> Thiết kế đồ họa</a>
+                      <a href="#">
+                        <i className="fa fa-angle-right"></i> Thiết kế đồ họa
+                      </a>
                     </li>
                     <li>
-                      <a href="#"><i className="fa fa-angle-right"></i> Lập trình</a>
+                      <a href="#">
+                        <i className="fa fa-angle-right"></i> Lập trình
+                      </a>
                     </li>
                     <li>
-                      <a href="#"><i className="fa fa-angle-right"></i> Thiết kế web</a>
+                      <a href="#">
+                        <i className="fa fa-angle-right"></i> Thiết kế web
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -125,9 +167,7 @@ const BlogPage = () => {
         </div>
       </section>
 
-      <footer className="footer">
-        {/* Add footer content here */}
-      </footer>
+      <footer className="footer">{/* Add footer content here */}</footer>
     </div>
   );
 };
