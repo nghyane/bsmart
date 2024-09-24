@@ -16,25 +16,25 @@ const BlogDetailPage = () => {
   return (
     <div className="blog-detail-wrapper">
       {/* Header component can be imported here */}
-
       <section className="banner__blog-detail">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12">
-              <div className="banner-content text-center">
-                <h1>Learn Webs Applications Development from Experts</h1>
-                <p>
-                  <Link to="/">Trang chủ</Link> <span> &gt; </span>
-                  <Link to="/blog">Blog</Link> <span> &gt; </span>
-                  <Link to="/blog/lap-trinh">Lập trình</Link>{" "}
-                  <span> &gt; </span>
-                  Tìm hiểu phát triển ứng dụng web từ các chuyên gia
-                </p>
-              </div>
+      <div className="container">
+        <div className="row">
+          {/* start heading */}
+          <div className="col-lg-12">
+            <div className="banner-content text-center">
+              <h1>Learn Web Applications Development from Experts</h1>
+              <p>
+                <a href="index.html">Trang chủ</a> <span> > </span>
+                <a href="index.html">Blog</a> <span> > </span>
+                <a href="index.html">Lập trình</a> <span> > </span>Tìm hiểu phát
+                triển ứng dụng web từ các chuyên gia
+              </p>
             </div>
           </div>
+          {/* end heading */}
         </div>
-      </section>
+      </div>
+    </section>
 
       <section className="blog-area two">
         <div className="container">
