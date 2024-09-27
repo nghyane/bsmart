@@ -1271,6 +1271,48 @@ div.swiper-button-prev:after {
     z-index: -2;
 }
 
+.banner__aboutus::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(5, 1, 51, 0.7);/* Add semi-transparent dark overlay */
+    backdrop-filter: blur(5px); /* Blur effect */
+
+  }
+  .caption-content {
+    position: relative;
+    z-index: 2; /* Make sure the text appears above the overlay */
+  }
+  
+  .title-banner2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .caption-content p a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .caption-content p a:hover {
+    text-decoration: underline;
+  }
+.banner__aboutus {
+    position: relative;
+    background-image: url('/assets/images/banner-2.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    overflow: hidden;
+  }
+
 .aboutus-wrapper .banner__aboutus h2 {
     color: #ff630e;
     line-height: 30px;
@@ -1285,7 +1327,26 @@ div.swiper-button-prev:after {
     font-size: 16px;
     line-height: 26px;
     color: #f5f5f5;
-}
+}.course-detail-wrapper .course-single-area .course-single-content .course-single-meta .author {
+    display: flex;
+    align-items: center;
+  }
+  
+  .course-detail-wrapper .course-single-area .course-single-content .course-single-meta .author img {
+    max-width: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .course-detail-wrapper .course-single-area .course-single-content .course-single-meta .author span {
+    color: #999;
+    margin-right: 5px;
+  }
+  
+  .course-detail-wrapper .course-single-area .course-single-content .course-single-meta .author strong {
+    font-weight: 700;
+    color: #0e0a38;
+  }
 
 .aboutus-wrapper .banner__aboutus p a {
     color: #f5f5f5;
@@ -1633,8 +1694,8 @@ div.swiper-button-prev:after {
     justify-content: center;
   
 }
-.custom-background {
-    background-image: url('/assets/images/backgoundAbout.jpg');
+/* .custom-background {
+    background-image: url('/assets/images/banner-2.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -1643,7 +1704,8 @@ div.swiper-button-prev:after {
     color: white;
     width: 100%;
     height: 320px;
-  }
+    
+  } */
 
 .write-1 {
     text-align: right;
@@ -1674,14 +1736,26 @@ div.swiper-button-prev:after {
     height: 300px;
 }
 
-.banner1 {
-    background-image: url(/assets/images/banner.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 92px;
-    position: relative;
+.container1 {
+  display: flex;
+  justify-content: space-between;
 }
+.banner1 {
+  background-image: url(/assets/images/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 92px;
+  position: relative;
+}
+/* .custom-banner:{
+  background-image: url('/assets/images/banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 92px;
+  position: relative;
+} */
 
 .banner1:before {
     content: "";
@@ -1718,10 +1792,6 @@ div.swiper-button-prev:after {
     justify-content: center;
 }
 
-.1 {
-    display: flex;
-    justify-content: space-between;
-}
 
 .my-element {
     height: 100%;
@@ -1794,38 +1864,27 @@ div.swiper-button-prev:after {
 }
 
 .caption_img1 {
-    position: relative;
+  display: flex;
+  flex-direction: column; /* or row, depending on your layout */
+  align-items: center; /* centers items horizontally */
+  justify-content: center; /* centers items vertically */
+  position: relative; /* allows positioning of children */
+  text-align: center; /* centers text within the div */
 }
 
 .img_aboutus_3 {
-    position: absolute;
-    top: 315px;
-    bottom: 0;
-    right: 0;
-    text-align: center;
-    margin: 0 auto;
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    width: 20%;
-    text-align: justify;
+  position: relative;
+  
 }
 
 .bt-aboutus_1 {
-    border: 0;
-    line-height: 25px;
-    display: block;
-    background-color: #ff630e;
-    color: #fff;
-    padding: 12px 30px;
-    border-radius: 30px;
-    font-size: 20px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin: 0 auto 10px;
-    width: 100%;
+  position: absolute; /* positions the button absolutely within its parent */
+  bottom: 20px; /* adjust as needed */
+  left: calc(50% - 30px); /* Move it slightly to the right */
+  transform: translateX(-50%); /* centers the button based on its new left position */
+  z-index: 1; /* ensures the button is above the image */
 }
+
 
 .bt-aboutus_1:hover {
     opacity: 0.8;
@@ -8048,20 +8107,23 @@ input {
     }
 
     .bt-aboutus_1 {
-        border: 0px;
-        line-height: 25px;
-        display: block;
-        background-color: rgb(255, 99, 14);
-        color: rgb(255, 255, 255);
-        padding: 5px 17px;
-        border-radius: 30px;
-        font-size: 10px;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        margin: 0px auto 10px;
-        width: 100%;
-    }
+      border: 0;
+      line-height: 25px;
+      display: block;
+      background-color: #ff630e;
+      color: #fff;
+      padding: 10px 15px; /* Giữ lại padding */
+      border-radius: 30px;
+      font-size: 15px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin: 0 auto 10px; /* Giữ margin tự động bên trái và bên phải */
+      width: 90%; /* Điều chỉnh width về 90% hoặc giá trị nhỏ hơn để tránh tràn */
+      max-width: 300px; /* Thiết lập kích thước tối đa nếu cần */
+      box-sizing: border-box; /* Đảm bảo padding được tính vào tổng chiều rộng */
+  }
+  
 
     .img_aboutus_3 {
         position: absolute;
@@ -8767,20 +8829,23 @@ input {
     }
 
     .bt-aboutus_1 {
-        border: 0px;
-        line-height: 25px;
-        display: block;
-        background-color: rgb(255, 99, 14);
-        color: rgb(255, 255, 255);
-        padding: 2px 15px;
-        border-radius: 30px;
-        font-size: 8px;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        margin: 0px auto 10px;
-        width: 100%;
-    }
+      border: 0;
+      line-height: 25px;
+      display: block;
+      background-color: #ff630e;
+      color: #fff;
+      padding: 10px 15px; /* Giữ lại padding */
+      border-radius: 30px;
+      font-size: 15px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin: 0 auto 10px; /* Giữ margin tự động bên trái và bên phải */
+      width: 90%; /* Điều chỉnh width về 90% hoặc giá trị nhỏ hơn để tránh tràn */
+      max-width: 300px; /* Thiết lập kích thước tối đa nếu cần */
+      box-sizing: border-box; /* Đảm bảo padding được tính vào tổng chiều rộng */
+  }
+  
 
     .img_aboutus_3 {
         position: absolute;
@@ -10418,7 +10483,9 @@ input {
     }
 
     .img-aboutus-end {
-        display: none;
+      max-width: 100%;  /* Giới hạn chiều rộng ảnh để nó không vượt quá phần tử chứa */
+      height: auto;      /* Đảm bảo tỉ lệ khung hình không bị biến dạng */
+      display: block;
     }
 
     .img-aboutus-end-1 {
@@ -11735,6 +11802,7 @@ input {
         letter-spacing: 1px;
         margin: 0px auto 10px;
         width: 100%;
+       
     }
 
     .advantages-2 .advantages-2-content h4 {

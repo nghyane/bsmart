@@ -1,0 +1,464 @@
+/* Reset và styles chung */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* Layout chính */
+  .course-single-area {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .course-single-content {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .course-sidebar {
+    width: 300px;
+  }
+  
+  /* Styles cho header khóa học */
+  .course-single-meta {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    
+  }
+  .author strong {
+    font-weight: bold;
+    
+  }
+  
+  .course-rating {
+    margin-left: auto;
+    display:flex;
+  
+  }
+  
+  /* Styles cho thông tin khóa học */
+  .course-descriptions {
+    margin-bottom: 20px;
+  }
+  
+  .course-descriptions h3 {
+    margin-bottom: 10px;
+  }
+  .course-descriptions h3{
+    font-weight: 600;
+  }
+  /* Styles cho danh sách lớp học */
+  .list-class-info {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px 0;
+ 
+  }
+  .info p {
+    color:red
+  }
+  .item-info-class {
+    min-width: 250px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  /* Styles cho sidebar */
+  .course-sidebar {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .course-banner img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .course-price {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  /* Buttons */
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0056D2;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #003d9a;
+  }
+  
+  /* Đánh giá và feedback */
+  .course-review, .course-feedback {
+    margin-top: 40px;
+  }
+  
+  .feedback-item {
+    border-bottom: 1px solid #eee;
+    padding: 20px 0;
+  }
+  
+  .feedback-heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .member-avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .pagination-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .pagination-btn, .pagination-arrow {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .pagination-btn:hover, .pagination-arrow:hover {
+    background-color: #ddd;
+  }
+  
+  .pagination-arrow {
+    font-weight: bold;
+  }
+  
+  .course-review {
+    padding: 20px;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    background-color: #fff;
+    max-width: 600px;
+  }
+  
+  .course-review h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .review-content-inner {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .review-ratings {
+    text-align: center;
+    margin-right: 30px;
+  }
+  
+  .review-ratings h2 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #222;
+  }
+  
+  .review-ratings span {
+    display: block;
+    color: #f39c12; /* Gold color for stars */
+    margin: 10px 0;
+  }
+  
+  .review-ratings i {
+    font-size: 24px;
+  }
+  
+  .review-ratings p {
+    color: #999;
+    margin-top: 10px;
+  }
+  
+  .rating-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .rating-star {
+    width: 20px;
+    color: #f39c12;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .rating-progress {
+    flex: 1;
+    height: 8px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    margin: 0 10px;
+    position: relative;
+  }
+  
+  .rating-progress-value {
+    display: block;
+    height: 100%;
+    background-color: #f39c12; /* Same gold color */
+    border-radius: 4px;
+    width: 50%; /* Adjust the percentage based on the rating */
+  }
+  
+  .review-text {
+    color: #666;
+    font-size: 14px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .course-single-area {
+      flex-direction: column;
+    }
+  
+    .course-sidebar {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+  .course-detail-wrapper .course-single-area .course-single-content .course-single-meta .author {
+    display: flex;
+    align-items: center;
+  }
+  
+  .course-detail-wrapper .course-single-area .course-single-content .course-single-meta .author img {
+    max-width: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .course-detail-wrapper .course-single-area .course-single-content .course-single-meta .author span {
+    color: #999;
+    margin-right: 5px;
+  }
+  
+  .course-detail-wrapper .course-single-area .course-single-content .course-single-meta .author strong {
+    font-weight: 700;
+    color: #0e0a38;
+  }
+  \.course-detail-wrapper .course-single-area .course-single-content .course-single-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .course-detail-wrapper .course-single-area .course-single-content .course-single-meta .author {
+    display: flex;
+    align-items: center;
+  }
+  
+  .course-detail-wrapper .course-single-area .course-single-content .course-single-meta .author img {
+    max-width: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .course-detail-wrapper .course-single-area .course-single-content .course-single-meta .author span {
+    color: #999;
+    margin-right: 5px;
+  }
+  
+  .course-detail-wrapper .course-single-area .course-single-content .course-single-meta .author strong {
+    font-weight: 700;
+    color: #0e0a38;
+  }
+  
+  .course-detail-wrapper .course-single-area .course-single-content .course-single-meta .course-rating .testi-rating {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .course-detail-wrapper .course-single-area .course-single-content .course-single-meta .course-share {
+    color: #0e0a38;
+    cu
+  }
+  .course-detail-wrapper .course-single-area .course-single-content .course-review .review-content-inner .rating-bar .rating-star {
+    position: relative;
+  }
+  
+  .course-detail-wrapper .course-single-area .course-single-content .course-review .review-content-inner .rating-bar .rating-star:before {
+    content: "\f006";
+    font-family: "FontAwesome";
+    position: absolute;
+    right: 15px;
+    color: #ff630e;
+  }
+  
+  .course-detail-wrapper .course-single-area .course-single-content .course-review .review-content-inner .rating-bar .rating-progress {
+    background-color: #e3e5eb;
+    height: 8px;
+    width: 76%;
+    border-radius: 4px;
+    margin: 0 20px;
+    position: relative;
+  }
+  
+  .course-detail-wrapper .course-single-area .course-single-content .course-review .review-content-inner .rating-bar .rating-progress .rating-progress-value {
+    background-color: #f4c150;
+    position: absolute;
+    height: 8px;
+    width: 40%;
+    left: 0;
+    border-radius: 4px;
+  }
+  
+  .course-detail-wrapper .course-single-area .course-single-content .course-feedback {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .course-detail-wrapper .course-single-area .course-single-content .course-feedback h3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #130f40;
+    margin-bottom: 15px;
+  }
+  
+  .feedback-item {
+    display: none;
+  }
+  
+  #btn-show-more {
+    display: none;
+    padding: 4px;
+    font-weight: 400 !important;
+  }
+  
+  .course-detail-wrapper .course-single-area .course-single-content .course-feedback .course-feedback-inner .feedback-item {
+    margin-bottom: 40px;
+  }
+  
+  .course-detail-wrapper .course-single-area .course-single-content .course-feedback .course-feedback-inner .feedback-item .feedback-heading {
+    display: flex;
+    align-items: center;
+  }
+  
+  .course-detail-wrapper .course-single-area .course-single-content .course-feedback .course-feedback-inner .feedback-item .feedback-heading .member-avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .course-detail-wrapper .course-single-area .course-single-content .course-feedback .course-feedback-inner .feedback-item .feedback-heading .member-info {
+    margin-left: 20px;
+  }
+  
+  .course-detail-wrapper .course-single-area .course-single-content .course-feedback .course-feedback-inner .feedback-item .feedback-heading .member-info p {
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 16px;
+  }
+  
+  .course-detail-wrapper .course-single-area .course-single-content .course-feedback .course-feedback-inner .feedback-item .feedback-heading .member-info .testi-rating i {
+    margin: 5px 2px 6px;
+  }
+  
+  .course-detail-wrapper .course-single-area .course-single-content .course-feedback .course-feedback-inner .feedback-item .feedback-content {
+    margin-top: 20px;
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 16px;
+    color: #999;
+  }
+  
+  .course-detail-wrapper .course-single-area .course-single-content .course-feedback .course-feedback-inner .btn-outline-secondary-custom {
+    padding: 10px 20px !important;
+  }
+  
+  .course-detail-wrapper .course-single-area .course-single-content .course-my-feedback .btn-primary-custom {
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .course-detail-wrapper .course-single-area .course-sidebar {
+    box-shadow: 0 0 30px rgba(51, 51, 51, 0.1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .course-detail-wrapper .course-single-area .course-sidebar .course-banner img {
+    width: 100%;
+    height: 220px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .course-detail-wrapper .course-single-area .course-sidebar .course-price {
+    font-weight: 700;
+    font-size: 36px;
+    color: #212327;
+    padding: 25px px 30px 20px;
+    display: inline-block;
+  }
+  
+  .course-detail-wrapper .course-single-area .course-sidebar .course-enroll-btn a {
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    width: 100%;
+    display: block;
+    color: #fff;
+    background-color: #ff630e;
+  }
+  
+  .course-detail-wrapper .course-single-area .course-sidebar .course-enroll-btn a:hover {
+    background-color: #0e0a38;
+    transition: all 0.3s;
+  }
+  .course-single-area-course-detail {
+    padding: 0 !important;
+    margin-top: 20px;
+  }
+  .course-single-area-course-detail {
+    padding: 0 !important;
+    margin-top: 20px;
+  }     
+  .course-detail-wrapper .row-reverse-custom {
+    flex-direction: column-reverse;
+  }

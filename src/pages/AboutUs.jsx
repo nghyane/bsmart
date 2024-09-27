@@ -1,10 +1,10 @@
-
+import React from 'react';
 
 const AboutUs = () => {
   return (
     <div>
       {/* Start Aboutus */}
-      <section className="banner__aboutus custom-background">
+      <section className="banner__aboutus ">
         <div className="container  " >
           <div className="caption-content text-center">
             <h2 className="title-banner2">Về chúng tôi</h2>
@@ -45,7 +45,7 @@ const AboutUs = () => {
       </section>
 
       {/* Mission and Vision */}
-      <section className="banner1">
+      <section className="banner1 custom-banner">
         <div className="container1">
           <div className="caption-content text-center ">
             <h2>SỨ MỆNH VÀ TẦM NHÌN</h2>
@@ -73,8 +73,8 @@ const AboutUs = () => {
         <div className="content-2">
           <div className="row">
             <div className="caption_img">
-              <img className="img-aboutus-4" src="assets/images/WEB-01.png" alt="About us" style={{ width: "100%" }} />
-              <img className="img-aboutus-4" src="assets/images/MOBILE-01.png" alt="Mobile version" style={{ display: "none" }} />
+              <img className="img-aboutus-4" src="/assets/images/WEB-01.png" alt="About us" style={{ width: "100%" }} />
+              {/* <img className="img-aboutus-4" src="/assets/images/MOBILE-01.png" alt="Mobile version" style={{ display: "none" }} /> */}
             </div>
           </div>
         </div>
@@ -96,6 +96,7 @@ const AboutUs = () => {
         </div>
       </section>
 
+
       {/* Development Roadmap */}
       <section className="information">
         <div className="container">
@@ -116,5 +117,6 @@ const AboutUs = () => {
     </div>
   );
 };
+
 
 export default AboutUs;

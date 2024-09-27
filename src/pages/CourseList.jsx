@@ -1,8 +1,22 @@
-
+import { useState } from 'react';
 import Collapsible from 'react-collapsible';
+import { FaChevronUp, FaChevronDown } from 'react-icons/fa';
+
+
 
 
 const CourseList = () => {
+
+
+  const [isTouchLinhVuc,setTouchLinhVuc] =useState(false);
+  const [isLangues,setLangues] =useState(false);
+
+  const handleToggle = () => {
+    setTouchLinhVuc(!isTouchLinhVuc);
+  };
+  const handleToggle2 = () => {
+    setLangues(!isLangues);
+  };
   return (
     <div>
       {/* Start courses */}
@@ -142,7 +156,11 @@ const CourseList = () => {
                         <input id="idBackEnd" type="checkbox" />
                         <label htmlFor="idBackEnd">Back End</label>
                       </div>
-                    <Collapsible className='text-primary my-3' trigger="xem thêm">
+                    <Collapsible className='text-primary my-3'   trigger={
+          <span onClick={handleToggle}>
+            {isTouchLinhVuc ? <FaChevronUp /> : <FaChevronDown />} xem thêm
+          </span>
+        }>
                      
                       <div id="linhVuc">
                         <div className="checkbox__course my-3">
@@ -185,7 +203,11 @@ const CourseList = () => {
                         <input id="idReactJS" type="checkbox" />
                         <label htmlFor="idReactJS">ReactJS</label>
                       </div>
-                      <Collapsible className='text-primary my-3' trigger="xem thêm">
+                      <Collapsible className='text-primary my-3' trigger={
+                        <span onClick={handleToggle2}>
+                        {isLangues ? <FaChevronUp /> : <FaChevronDown />} xem thêm
+                      </span>
+                      }>
                      
                       <div id="subject">
                         <div className="checkbox__course my-3">
@@ -208,26 +230,7 @@ const CourseList = () => {
                     </Collapsible>
                    
                       {/* Show more ,`upIcon1`,`downIcon1`*/}
-                      <div
-                        id="showMore"
-                        onclick="showMoreLocal(`subject`,`txtShowTitle1`, `upIcon1`, `downIcon1`)"
-                      >
-                        <a className="txtShow">
-                          <span id="txtShowTitle1">Thu gọn</span>
-                          <i
-                            id="downIcon1"
-                            style={{ display: "none" }}
-                            className="fa fa-arrow-down"
-                            aria-hidden="true"
-                          />
-                          <i
-                            id="upIcon1"
-                            style={{ display: "block" }}
-                            className="fa fa-arrow-up"
-                            aria-hidden="true"
-                          />
-                        </a>
-                      </div>
+                   
                     </div>
                   </div>
                 </form>
@@ -353,7 +356,7 @@ const CourseList = () => {
             </div>
             <div className="col-lg-9 col-md-7">
               <div className="courses-list-content">
-                <div className="d-flex flex-row  justify-content-between">
+                <div className="d-flex flex-row  justify-content-between align-items-center">
                   <div className="d-flex counter-course gap-2">
                     <h5 className="fw-bold">0 </h5>
                     <p> Khoá học</p>
@@ -456,18 +459,12 @@ const CourseList = () => {
                           <div id="btnShow">
                             <a
                               id="linkSign"
-                              href="./course-detail.html"
+                              href="/course/:courseId"
                               className="btn btn-primary-custom p-3"
                             >
                               Xem chi tiết
                             </a>
-                            <a
-                              id="linkIntro"
-                              href="#"
-                              className="btn btn-outline-secondary-custom w-100 p-3"
-                            >
-                              Mã giới thiệu
-                            </a>
+                           
                           </div>
                         </div>
                       </div>
@@ -556,18 +553,12 @@ const CourseList = () => {
                           <div id="btnShow">
                             <a
                               id="linkSign"
-                              href="./course-detail.html"
+                              href="/course/:courseId"
                               className="btn btn-primary-custom p-3"
                             >
                               Xem chi tiết
                             </a>
-                            <a
-                              id="linkIntro"
-                              href="#"
-                              className="btn btn-outline-secondary-custom w-100 p-3"
-                            >
-                              Mã giới thiệu
-                            </a>
+                          
                           </div>
                         </div>
                       </div>
@@ -653,18 +644,12 @@ const CourseList = () => {
                           <div id="btnShow">
                             <a
                               id="linkSign"
-                              href="./course-detail.html"
+                              href="/course/:courseId"
                               className="btn btn-primary-custom p-3"
                             >
                               Xem chi tiết
                             </a>
-                            <a
-                              id="linkIntro"
-                              href="#"
-                              className="btn btn-outline-secondary-custom w-100 p-3"
-                            >
-                              Mã giới thiệu
-                            </a>
+                           
                           </div>
                         </div>
                       </div>
