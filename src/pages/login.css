@@ -34,7 +34,7 @@
 
 
 .home-banner {
-    background-image: url(../../public/assets/images/banner-intro1.jpg);
+    background-image: url(../../public/assets/images/banner.jpg);
     background-size: cover;
     background-position: center;
     height: 90vh;
@@ -107,4 +107,142 @@
     font-size: 30px;
     display: inline-block;
     color: #ff630e;
+}
+
+
+.right-section {
+    background-image: url(/assets/images/banner-4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+    padding: 220px 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.left-section {
+    background-image: url(/assets/images/banner-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
+    padding: 220px 0;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.left-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.right-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.learnpath h2{
+    font-size: 42px;
+    line-height: 56px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.learnpath {
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.left-section-content {
+    color: white;
+    position: relative;
+}
+
+.right-section-content {
+    color: white;
+    position: relative;
+}
+
+.left-section:hover:before {
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.right-section:hover:before {
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.advan-2 {
+    padding: 95px 0 150px;
+    background-image: url(https://cybersoft.edu.vn/wp-content/uploads/2020/04/funfact_bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.advan-2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.advan-2 .advantages-2-content {
+    position: relative;
+}
+
+.advan-2 .advantages-2-content h4 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+.advan-2 .advantages-2-content h2 {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 30px;
+}
+
+.btn-primary-custom-select {
+    background-color: #ff630e;
+    color: #fff;
+    padding: 15px 7px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-outline-secondary-custom {
+    color: #fff;
+    background-color: #ff630e;
+    border: 1px solid #ff630e;
 }

@@ -100,7 +100,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className='advantages-page' style={{marginBottom: '60px'}}>
+      <div className='advantages-page' style={{ marginBottom: '60px' }}>
         <div className='container'>
           <h2 class="section-heading text-center section-heading-title-mobile">Điểm ưu việt tại BSmart</h2>
           <div class="row">
@@ -194,9 +194,79 @@ const Home = () => {
                   <h4 class="card-title-home">Trao tay chìa khóa thành công</h4>
                 </div>
                 <div class="card-content">
-                Hướng dẫn viết CV, phỏng vấn. Kết nối doanh nghiệp, gặp gỡ doanh nghiệp, phỏng vấn cùng doanh nghiệp ngay sau khi tốt nghiệp.
+                  Hướng dẫn viết CV, phỏng vấn. Kết nối doanh nghiệp, gặp gỡ doanh nghiệp, phỏng vấn cùng doanh nghiệp ngay sau khi tốt nghiệp.
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className='learnpath'>
+        <div className='container-fluid'>
+          <div className="row">
+            <div class="col-md-6 col-sm-12 p-0 image-mobile-home-page">
+              <div class="left-section left-section-mobile">
+                <div class="left-section-content">
+                  <h2 class="text-center">Trái ngành</h2>
+                  <p class="text-center">From zero to hero</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 p-0 image-mobile-home-page">
+              <div class="right-section right-section-mobile">
+                <div class="right-section-content">
+                  <h2 class="text-center">Đã biết lập trình</h2>
+                  <p class="text-center">
+                    Đã có kiến thức tư duy lập trình và OOP
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style={{ paddingBottom: '40px', paddingTop: '30px'}} className="courses">
+        <div className="courses-content">
+          <h2 className='text-center'
+            style={{
+              fontSize: '45px',
+              lineHeight: '55px',
+              fontWeight: '700',
+              color: '#0e0a38',
+              marginBottom: '10px'
+            }}
+          >Khoá học tiêu biểu</h2>
+          <div className="owl-carousel owl-theme owl-loaded owl-drag">
+            <div className="owl-stage-outer">
+              <div className="owl-stage" style={{
+                transform: 'translated3d(0px,0px,0px)',
+                transition: 'all',
+              }}>
+
+              </div>
+            </div>  
+          </div>  
+
+        </div>
+      </div>           
+
+
+      <div className="advan-2">
+        <div class="container">
+          <div class="advantages-2-content">
+            <h4 class="text-center">
+              Định hướng và Chuẩn hoá lộ trình học tập
+            </h4>
+            <h2 class="text-center">
+              Học Thật, Dự Án Thật, Giảng Viên Tận Tâm
+            </h2>
+            <div class="d-flex justify-content-center">
+              <a href="./courses.html" class=" btn-primary-custom-select m-2 title-index1">
+                Danh sách khoá học
+              </a>
+              <button class=" btn-outline-secondary-custom m-2 title-index1">
+                Tư vấn lộ trình
+              </button>
             </div>
           </div>
         </div>
