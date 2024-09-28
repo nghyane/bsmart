@@ -246,3 +246,167 @@
     background-color: #ff630e;
     border: 1px solid #ff630e;
 }
+
+.ant-carousel .slick-prev{
+  color: black;
+  width: 50px;
+  height: 50px;
+  left: -20px;
+}
+
+.ant-carousel .slick-next {
+  color: black;
+  width: 50px;
+  height: 50px;
+  right: -40px;
+}
+
+.ant-carousel .slick-prev::before, 
+.ant-carousel .slick-next::before {
+  color: black; 
+  font-size: 30px;
+  font-weight: 600;
+}
+
+
+
+.course-card {
+    transition: 0.5s;
+    border-radius: 10px;
+    width: 90%;
+    border: 1px solid #999;
+    margin-top: 10px;
+}
+
+.price-cost-detail {
+    position: absolute;
+    top: 0;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #ff630e;
+    background-color: #fff;
+    box-shadow: 2px 2px gray;
+    z-index: 2;
+}
+
+.course-card .banner-course {
+    border-radius: 10px !important;
+    object-fit: cover;
+}
+
+.course-card .banner-course {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    position: relative;
+    border-bottom: 1px solid #999;
+}
+
+.card-body {
+    border: 1px solid #c1c1c1;
+    border-radius: 10px;
+}
+
+.icon-lv-title-right {
+    position: absolute;
+    right: -20px;
+    top: -20px;
+}
+
+.course-card .card-title {
+    color: #130f40;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.wrapper .sub-title {
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.course-card .description {
+    margin-top: 10px;
+    font-weight: 400;
+    text-align: justify;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 25px;
+    -webkit-line-clamp: 3;
+    height: 75px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.feedback-time {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+ .course-card .btn-invite-course {
+    background-color: #ff630e;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.course-card .logo-course {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border: 2px solid #999;
+    padding: 2px;
+    background-color: #fff;
+    bottom: -20%;
+    left: 20px;
+    border-radius: 5px;
+}
+
+.course-card .logo-course img {
+    width: 100%;
+    height: 100%;
+}
+
+.out__sigle-mentor-home {
+    height: 400px;
+}
+
+.owl-item img {
+    border-radius: 10px;
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+    display: block; 
+}
+
+.out__sigle-info {
+    text-align: center;
+}
+
+.out__sigle-info h3 {
+    color: #130f40;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    margin: 15px 0;
+}
+
+.out__sigle-info h4 {
+    margin: 0px;
+    margin-bottom: 10px;
+    padding: 0px;
+    border: 0px;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}

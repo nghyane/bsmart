@@ -1,6 +1,10 @@
 import React from 'react';
-import './login.css';
 import { Link } from 'react-router-dom';
+import { Carousel } from 'antd';
+import './login.css';
+
+const contentStyle = {
+};
 
 const Home = () => {
   return (
@@ -43,7 +47,7 @@ const Home = () => {
             fontWeight: '500'
           }}
           className='btn-home'
-          to="/register"
+          to="/courses"
         >
           XEM KHÓA HỌC
         </Link>
@@ -225,7 +229,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div style={{ paddingBottom: '40px', paddingTop: '30px'}} className="courses">
+      <div style={{ paddingBottom: '40px', paddingTop: '30px' }} className="courses">
         <div className="courses-content">
           <h2 className='text-center'
             style={{
@@ -233,25 +237,619 @@ const Home = () => {
               lineHeight: '55px',
               fontWeight: '700',
               color: '#0e0a38',
-              marginBottom: '10px'
+              marginBottom: '20px'
             }}
           >Khoá học tiêu biểu</h2>
-          <div className="owl-carousel owl-theme owl-loaded owl-drag">
-            <div className="owl-stage-outer">
-              <div className="owl-stage" style={{
-                transform: 'translated3d(0px,0px,0px)',
-                transition: 'all',
-              }}>
+          <div style={{ padding: '0 90px' }}>
+            <Carousel
+              arrows
+              infinite={false}
+              slidesToShow={4}  // Hiển thị 4 thẻ
+              slidesToScroll={1}  // Mỗi lần cuộn 1 thẻ
+            >
+              <div className="owl-item active" style={{ width: '316.5px', marginRight: '10px' }}>
+                <div className="item d-flex">
+                  <div className="card course-card">
+                    {/* Price */}
+                    <div className="price-cost-detail">1.200.000 đ</div>
 
+                    <div className="banner-course" style={{ backgroundImage: 'url(/assets/images/devops-course-banner.png)' }}>
+                      <div className="logo-course">
+                        <img src="/assets/images/avatar-mentor-1.jpg" alt="Logo devops" />
+                      </div>
+                    </div>
+
+                    <div className="card-body pt-5">
+                      {/* Icon lv */}
+                      <div className="d-flex flex-column position-relative">
+                        <div className="icon-lv-title-right">
+                          <img src="/assets/images/icon-title-course.png" className="icon-title-course" alt="icon-title-course" />
+                        </div>
+
+                        {/* Title course */}
+                        <h5 className="card-title">Khoá học Devops</h5>
+                      </div>
+
+                      <p className="sub-title">Mentor Cường</p>
+                      <p className="description">
+                        Với 15 buổi học, kết hợp giữa lý thuyết và những bài thực
+                        hành thực tiễn, học viên học tại BSmart sẽ có cơ hội tiếp
+                        cận xu hướng làm việc mới, hiện đại hơn, có khả năng sử
+                        dụng các công cụ hỗ trợ cho những teams đã, đang và sẽ
+                        triển khai theo mô hình DevOps. Khóa học DevOps on AWS của
+                        BSmart được thiết kế dựa trên việc tổng hợp những kinh
+                        nghiệm và kỹ năng thực tiễn trong quá trình làm dự án thực
+                        tế, đồng thời cập nhật và tổng hợp từ nhiều nguồn khác
+                        nhau, từ đó giúp học viên có cái nhìn bao quát và rõ nhất
+                        về DevOps
+                      </p>
+
+                      <div className="testi-rating">
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                      </div>
+
+                      <div className="feedback-time">
+                        <div className="time">
+                          <img src="assets/images/clock-time.png" className="icon-time" alt="hinh-anh-front-end-icontime" />
+                          <p>20hr</p>
+                        </div>
+
+                        <div className="time">
+                          <img src="assets/images/user.png" className="icon-user" alt="hinh-anh-front-end-iconuser" />
+                          <p>106 học viên</p>
+                        </div>
+
+                        <div className="mark">
+                          <img src="assets/images/check-mark.png" className="icon-V" alt="hinh-anh-front-end-iconV" />
+                          <p>26 Buổi học</p>
+                        </div>
+                      </div>
+
+                      <button className="btn-invite-course mt-2">Xem chi tiết</button>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>  
-          </div>  
+              <div className="owl-item active" style={{ width: '316.5px', marginRight: '10px' }}>
+                <div className="item d-flex">
+                  <div className="card course-card">
+                    {/* Price */}
+                    <div className="price-cost-detail">1.200.000 đ</div>
 
+                    <div className="banner-course" style={{ backgroundImage: 'url(/assets/images/net-course-banner.jpg)' }}>
+                      <div className="logo-course">
+                        <img src="/assets/images/avatar-mentor-3.jpg" alt="Logo devops" />
+                      </div>
+                    </div>
+
+                    <div className="card-body pt-5">
+                      {/* Icon lv */}
+                      <div className="d-flex flex-column position-relative">
+                        <div className="icon-lv-title-right">
+                          <img src="/assets/images/icon-title-course.png" className="icon-title-course" alt="icon-title-course" />
+                        </div>
+
+                        {/* Title course */}
+                        <h5 className="card-title">Khoá học .NET Basic</h5>
+                      </div>
+
+                      <p className="sub-title">Mentor Phúc</p>
+                      <p className="description">
+                        Khóa học lập trình asp.net dành cho các bạn sinh viên khoa
+                        CNTT các trường Trung cấp - Cao đẳng - Đại học . Và tất cả
+                        các đối tượng yêu thích, đam mê và mong muốn trở thành lập
+                        trình viên công nghệ .NET
+                      </p>
+
+                      <div className="testi-rating">
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                      </div>
+
+                      <div className="feedback-time">
+                        <div className="time">
+                          <img src="assets/images/clock-time.png" className="icon-time" alt="hinh-anh-front-end-icontime" />
+                          <p>20hr</p>
+                        </div>
+
+                        <div className="time">
+                          <img src="assets/images/user.png" className="icon-user" alt="hinh-anh-front-end-iconuser" />
+                          <p>106 học viên</p>
+                        </div>
+
+                        <div className="mark">
+                          <img src="assets/images/check-mark.png" className="icon-V" alt="hinh-anh-front-end-iconV" />
+                          <p>26 Buổi học</p>
+                        </div>
+                      </div>
+
+                      <button className="btn-invite-course mt-2">Xem chi tiết</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="owl-item active" style={{ width: '316.5px', marginRight: '10px' }}>
+                <div className="item d-flex">
+                  <div className="card course-card">
+                    {/* Price */}
+                    <div className="price-cost-detail">1.200.000 đ</div>
+
+                    <div className="banner-course" style={{ backgroundImage: 'url(/assets/images/net-mvc-course.png)' }}>
+                      <div className="logo-course">
+                        <img src="/assets/images/avatar-mentor-1.jpg" alt="Logo devops" />
+                      </div>
+                    </div>
+
+                    <div className="card-body pt-5">
+                      {/* Icon lv */}
+                      <div className="d-flex flex-column position-relative">
+                        <div className="icon-lv-title-right">
+                          <img src="/assets/images/icon-title-course.png" className="icon-title-course" alt="icon-title-course" />
+                        </div>
+
+                        {/* Title course */}
+                        <h5 className="card-title">Khoá học .NET MVC</h5>
+                      </div>
+
+                      <p className="sub-title">Mentor Cường</p>
+                      <p className="description">
+                        Khóa học này là khóa học thứ 3 của các bạn giúp các bạn có
+                        cái nhìn tổng quan và các bước để xây dựng một dự án thực
+                        tế sử dụng ASP.NET MVC. Khóa học này mình xây dựng không
+                        theo một giáo trình nào mà đi thẳng vào thực tế dự án.
+                      </p>
+
+                      <div className="testi-rating">
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                      </div>
+
+                      <div className="feedback-time">
+                        <div className="time">
+                          <img src="assets/images/clock-time.png" className="icon-time" alt="hinh-anh-front-end-icontime" />
+                          <p>20hr</p>
+                        </div>
+
+                        <div className="time">
+                          <img src="assets/images/user.png" className="icon-user" alt="hinh-anh-front-end-iconuser" />
+                          <p>106 học viên</p>
+                        </div>
+
+                        <div className="mark">
+                          <img src="assets/images/check-mark.png" className="icon-V" alt="hinh-anh-front-end-iconV" />
+                          <p>26 Buổi học</p>
+                        </div>
+                      </div>
+
+                      <button className="btn-invite-course mt-2">Xem chi tiết</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="owl-item active" style={{ width: '316.5px', marginRight: '10px' }}>
+                <div className="item d-flex">
+                  <div className="card course-card">
+                    {/* Price */}
+                    <div className="price-cost-detail">1.200.000 đ</div>
+
+                    <div className="banner-course" style={{ backgroundImage: 'url(/assets/images/front-end-course.png)' }}>
+                      <div className="logo-course">
+                        <img src="/assets/images/avatar-mentor-2.jpg" alt="Logo devops" />
+                      </div>
+                    </div>
+
+                    <div className="card-body pt-5">
+                      {/* Icon lv */}
+                      <div className="d-flex flex-column position-relative">
+                        <div className="icon-lv-title-right">
+                          <img src="/assets/images/icon-title-course.png" className="icon-title-course" alt="icon-title-course" />
+                        </div>
+
+                        {/* Title course */}
+                        <h5 className="card-title">Khoá học Front End</h5>
+                      </div>
+
+                      <p className="sub-title">Mentor Long</p>
+                      <p className="description">
+                        Khóa học Frontend là quy trình sử dụng các ngôn ngữ HTML, CSS, JavaScript để thiết kế, xây dựng giao diện cho trang web
+                        hoặc ứng dụng web, giúp người dùng có thể xem và tương tác trực tiếp trên đó. Mục tiêu của việc thiết kế trang web là
+                        giúp người dùng dễ dàng sử dụng khi mở trang web.
+                      </p>
+
+                      <div className="testi-rating">
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                      </div>
+
+                      <div className="feedback-time">
+                        <div className="time">
+                          <img src="assets/images/clock-time.png" className="icon-time" alt="hinh-anh-front-end-icontime" />
+                          <p>20hr</p>
+                        </div>
+
+                        <div className="time">
+                          <img src="assets/images/user.png" className="icon-user" alt="hinh-anh-front-end-iconuser" />
+                          <p>106 học viên</p>
+                        </div>
+
+                        <div className="mark">
+                          <img src="assets/images/check-mark.png" className="icon-V" alt="hinh-anh-front-end-iconV" />
+                          <p>26 Buổi học</p>
+                        </div>
+                      </div>
+
+                      <button className="btn-invite-course mt-2">Xem chi tiết</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="owl-item active" style={{ width: '316.5px', marginRight: '10px' }}>
+                <div className="item d-flex">
+                  <div className="card course-card">
+                    {/* Price */}
+                    <div className="price-cost-detail">1.200.000 đ</div>
+
+                    <div className="banner-course" style={{ backgroundImage: 'url(/assets/images/net-api-course.jpg)' }}>
+                      <div className="logo-course">
+                        <img src="/assets/images/avatar-mentor-2.jpg" alt="Logo devops" />
+                      </div>
+                    </div>
+
+                    <div className="card-body pt-5">
+                      {/* Icon lv */}
+                      <div className="d-flex flex-column position-relative">
+                        <div className="icon-lv-title-right">
+                          <img src="/assets/images/icon-title-course.png" className="icon-title-course" alt="icon-title-course" />
+                        </div>
+
+                        {/* Title course */}
+                        <h5 className="card-title">Khoá học .NET API</h5>
+                      </div>
+
+                      <p className="sub-title">Mentor Long</p>
+                      <p className="description">
+                        Khoá học này thiết kế theo phương pháp mới xây dựng một
+                        REST API chuẩn REST từng bước sau đó refactoring code theo
+                        Design Pattern.
+                      </p>
+
+                      <div className="testi-rating">
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                      </div>
+
+                      <div className="feedback-time">
+                        <div className="time">
+                          <img src="assets/images/clock-time.png" className="icon-time" alt="hinh-anh-front-end-icontime" />
+                          <p>20hr</p>
+                        </div>
+
+                        <div className="time">
+                          <img src="assets/images/user.png" className="icon-user" alt="hinh-anh-front-end-iconuser" />
+                          <p>106 học viên</p>
+                        </div>
+
+                        <div className="mark">
+                          <img src="assets/images/check-mark.png" className="icon-V" alt="hinh-anh-front-end-iconV" />
+                          <p>26 Buổi học</p>
+                        </div>
+                      </div>
+
+                      <button className="btn-invite-course mt-2">Xem chi tiết</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Carousel>
+          </div>
         </div>
-      </div>           
+      </div>
 
+      <div style={{ paddingBottom: '40px', paddingTop: '30px' }} className="menter-us">
+        <div className="courses-content">
+          <h2 className='text-center'
+            style={{
+              fontSize: '45px',
+              lineHeight: '55px',
+              fontWeight: '700',
+              color: '#0e0a38',
+              marginBottom: '20px'
+            }}
+          >Mentor tiêu biểu</h2>
+          <div style={{ padding: '0 90px' }}>
+            <Carousel
+              arrows
+              infinite={false}
+              slidesToShow={4}  // Hiển thị 4 thẻ
+              slidesToScroll={1}  // Mỗi lần cuộn 1 thẻ
+            >
+              <div className="owl-item" style={{ width: '316.5px', marginRight: '10px' }}>
+                <div className="item">
+                  <div className="course-card">
+                    <div className="out__sigle-mentor-home">
+                      <img src="/assets/images/instructor-2.jpg" alt="" />
+                      <div className="out__sigle-info">
+                        <h3>Shane Warne</h3>
+                        <h4>Instructor</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="owl-item" style={{ width: '316.5px', marginRight: '10px' }}>
+                <div className="item">
+                  <div className="course-card">
+                    <div className="out__sigle-mentor-home">
+                      <img src="/assets/images/instructor-2.jpg" alt="" />
+                      <div className="out__sigle-info">
+                        <h3>Shane Warne</h3>
+                        <h4>Instructor</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="owl-item" style={{ width: '316.5px', marginRight: '10px' }}>
+                <div className="item">
+                  <div className="course-card">
+                    <div className="out__sigle-mentor-home">
+                      <img src="/assets/images/instructor-2.jpg" alt="" />
+                      <div className="out__sigle-info">
+                        <h3>Shane Warne</h3>
+                        <h4>Instructor</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="owl-item" style={{ width: '316.5px', marginRight: '10px' }}>
+                <div className="item">
+                  <div className="course-card">
+                    <div className="out__sigle-mentor-home">
+                      <img src="/assets/images/instructor-2.jpg" alt="" />
+                      <div className="out__sigle-info">
+                        <h3>Shane Warne</h3>
+                        <h4>Instructor</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="owl-item" style={{ width: '316.5px', marginRight: '10px' }}>
+                <div className="item">
+                  <div className="course-card">
+                    <div className="out__sigle-mentor-home">
+                      <img src="/assets/images/instructor-2.jpg" alt="" />
+                      <div className="out__sigle-info">
+                        <h3>Shane Warne</h3>
+                        <h4>Instructor</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-      <div className="advan-2">
+            </Carousel>
+          </div>
+        </div>
+      </div>
+
+      <div style={{ paddingBottom: '40px', paddingTop: '50px' }} className="courses">
+        <div className="courses-content">
+          <h2 className='text-center'
+            style={{
+              fontSize: '45px',
+              lineHeight: '55px',
+              fontWeight: '700',
+              color: '#0e0a38',
+              marginBottom: '20px'
+            }}
+          >Câu chuyện của học viên</h2>
+          <div style={{ padding: '0 90px' }}>
+            <Carousel
+              arrows
+              infinite={false}
+              slidesToShow={4}  // Hiển thị 4 thẻ
+              slidesToScroll={1}  // Mỗi lần cuộn 1 thẻ
+            >
+              <div className="owl-item active" style={{ width: '316.5px', marginRight: '10px' }}>
+                <div className="item d-flex">
+                  <div className="card course-card">
+                    <div className="banner-course" style={{ backgroundImage: 'url(https://algo.edu.vn/wp-content/uploads/2022/05/be2.jpg)' }}>
+                    </div>
+
+                    <div className="card-body">
+                      {/* Icon lv */}
+                      <div className="d-flex flex-column position-relative">
+                        
+
+                        {/* Title course */}
+                        <h5 className="card-title">Karik</h5>
+                      </div>
+
+                      <p className="sub-title">.NET Basic</p>
+                      <p className="sub-title">
+                        
+                      "Con có tự tin, mạnh dạn hơn khi trình bày, thuyết trình về lập trình"
+                    
+                      </p>
+
+                      <div className="testi-rating">
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                      </div>
+
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="owl-item active" style={{ width: '316.5px', marginRight: '10px' }}>
+                <div className="item d-flex">
+                  <div className="card course-card">
+                    <div className="banner-course" style={{ backgroundImage: 'url(https://algo.edu.vn/wp-content/uploads/2022/05/ethan-2-2.jpg)' }}>
+                    </div>
+
+                    <div className="card-body">
+                      {/* Icon lv */}
+                      <div className="d-flex flex-column position-relative">
+                        
+
+                        {/* Title course */}
+                        <h5 className="card-title">Ethen</h5>
+                      </div>
+
+                      <p className="sub-title">ReactJS</p>
+                      <p className="sub-title">
+                      
+                      "Em phát triển rất nhiều, giúp các môn học trên trường dễ dàng hơn"
+                    
+                      </p>
+
+                      <div className="testi-rating">
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                      </div>
+
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="owl-item active" style={{ width: '316.5px', marginRight: '10px' }}>
+                <div className="item d-flex">
+                  <div className="card course-card">
+                    <div className="banner-course" style={{ backgroundImage: 'url(https://algo.edu.vn/wp-content/uploads/2022/05/be1.jpg)' }}>
+                    </div>
+
+                    <div className="card-body">
+                      {/* Icon lv */}
+                      <div className="d-flex flex-column position-relative">
+                        
+
+                        {/* Title course */}
+                        <h5 className="card-title">Sulin</h5>
+                      </div>
+
+                      <p className="sub-title">Front-end</p>
+                      <p className="sub-title">
+                       
+                      "Có thể tự tạo nên dự án riêng và học cách quản lý,
+                      phát triển dự án"
+                    
+                      </p>
+
+                      <div className="testi-rating">
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                      </div>
+
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="owl-item active" style={{ width: '316.5px', marginRight: '10px' }}>
+                <div className="item d-flex">
+                  <div className="card course-card">
+                    <div className="banner-course" style={{ backgroundImage: 'url(https://algo.edu.vn/wp-content/uploads/2022/05/im3-1-1.png)' }}>
+                    </div>
+
+                    <div className="card-body">
+                      {/* Icon lv */}
+                      <div className="d-flex flex-column position-relative">
+                        
+
+                        {/* Title course */}
+                        <h5 className="card-title">Trần Tiến</h5>
+                      </div>
+
+                      <p className="sub-title">ReactJS</p>
+                      <p className="sub-title">
+                        
+                      "Con có thể thuần thục viết code, thật tuyệt vời"
+                    
+                      </p>
+
+                      <div className="testi-rating">
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                      </div>
+
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="owl-item active" style={{ width: '316.5px', marginRight: '10px' }}>
+                <div className="item d-flex">
+                  <div className="card course-card">
+                    <div className="banner-course" style={{ backgroundImage: 'url(https://algo.edu.vn/wp-content/uploads/2022/05/be2.jpg)' }}>
+                    </div>
+
+                    <div className="card-body">
+                      {/* Icon lv */}
+                      <div className="d-flex flex-column position-relative">
+                        
+
+                        {/* Title course */}
+                        <h5 className="card-title">Karik</h5>
+                      </div>
+
+                      <p className="sub-title">.NET Basic</p>
+                      <p className="sub-title">
+                        
+                      "Con có tự tin, mạnh dạn hơn khi trình bày, thuyết trình về lập trình"
+                    
+                      </p>
+
+                      <div className="testi-rating">
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                        <i className="fa fa-star"></i>
+                      </div>
+
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Carousel>
+          </div>
+        </div>
+      </div>
+
+      <div className="advan-2" style={{ marginTop: '80px'}}>
         <div class="container">
           <div class="advantages-2-content">
             <h4 class="text-center">
@@ -261,9 +859,9 @@ const Home = () => {
               Học Thật, Dự Án Thật, Giảng Viên Tận Tâm
             </h2>
             <div class="d-flex justify-content-center">
-              <a href="./courses.html" class=" btn-primary-custom-select m-2 title-index1">
+              <Link to="/courses" class=" btn-primary-custom-select m-2 title-index1">
                 Danh sách khoá học
-              </a>
+              </Link>
               <button class=" btn-outline-secondary-custom m-2 title-index1">
                 Tư vấn lộ trình
               </button>
