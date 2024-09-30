@@ -1,5 +1,5 @@
 .loginbanner {
-    background-image: url(../../public/assets/images/icon-login.jpg);
+    background-image: url(/assets/images/icon-login.jpg);
     background-size: cover;
     background-position: center;
     height: 45vh;
