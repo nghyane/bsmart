@@ -203,13 +203,8 @@ const BlogDetailPage = () => {
                           </label>
                         </div>
                       </div>
-                      <div className="omexo-post-btn text-center">
-                        <button
-                          type="submit"
-                          className="btn btn-primary-custom btn-sm px-4"
-                        >
-                          Đăng bình luận
-                        </button>
+                      <div className="omexo-post-btn">
+                        <a href="#">Đăng bình luận</a>
                       </div>
                     </form>
                   </div>

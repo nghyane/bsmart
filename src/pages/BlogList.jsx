@@ -8,7 +8,7 @@ const BlogPage = () => {
       title: "Tìm hiểu phát triển ứng dụng web từ các chuyên gia",
       date: "12/30/2023",
       category: "Lập trình & thiết kế web",
-      image: "assets/images/blog-member.jpg",
+      image: "/assets/images/blog-member.jpg",
       excerpt:
         "Điều quan trọng là phải có một dịch vụ khách hàng tốt, một nhà cung cấp dịch vụ khách hàng. Hendrerit của Hạm đội Xe tải trẻ em không có thùng. Trong trừ khi hoặc, xe tải hoặc, protein đó, bất động sản hoặc, trừ khi. Nhưng giá cả, ligula sollicitudin laoreet viverra, tra tấn các thành viên libero leo, eget nhạt nhẽo bây giờ tra tấn eu nibh. Không mềm. Cứ như vậy. điện thoại thông minh Nhưng nhu cầu, trước khi và vulutate volutpat, eros pede [...]",
     },
@@ -17,7 +17,7 @@ const BlogPage = () => {
       title: "Tìm hiểu phát triển ứng dụng web từ các chuyên gia",
       date: "12/30/2023",
       category: "Lập trình & thiết kế web",
-      image: "assets/images/blog-member.jpg",
+      image: "/assets/images/blog-member.jpg",
       excerpt:
         "Điều quan trọng là phải có một dịch vụ khách hàng tốt, một nhà cung cấp dịch vụ khách hàng. Hendrerit của Hạm đội Xe tải trẻ em không có thùng. Trong trừ khi hoặc, xe tải hoặc, protein đó, bất động sản hoặc, trừ khi. Nhưng giá cả, ligula sollicitudin laoreet viverra, tra tấn các thành viên libero leo, eget nhạt nhẽo bây giờ tra tấn eu nibh. Không mềm. Cứ như vậy. điện thoại thông minh Nhưng nhu cầu, trước khi và vulutate volutpat, eros pede [...]",
     },
