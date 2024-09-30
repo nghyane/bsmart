@@ -24,9 +24,9 @@ const BlogDetailPage = () => {
             <div className="banner-content text-center">
               <h1>Learn Web Applications Development from Experts</h1>
               <p>
-                <a href="index.html">Trang chủ</a> <span> > </span>
-                <a href="index.html">Blog</a> <span> > </span>
-                <a href="index.html">Lập trình</a> <span> > </span>Tìm hiểu phát
+                <a href="index.html">Trang chủ</a> <span> &gt; </span>
+                <a href="index.html">Blog</a> <span> &gt; </span>
+                <a href="index.html">Lập trình</a> <span> &gt; </span>Tìm hiểu phát
                 triển ứng dụng web từ các chuyên gia
               </p>
             </div>

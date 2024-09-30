@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import './login.css';
+import '../assets/login.css';
 import { useState } from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
@@ -36,7 +36,7 @@ const Login = () => {
                     <a style={{
                         color: 'white'
                     }} href="#">Trang chủ</a>
-                    <span> > </span>
+                    <span> &gt; </span>
                     <span>đăng nhập</span>
                 </p>
             </div>

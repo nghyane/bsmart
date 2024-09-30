@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Carousel } from 'antd';
-import './login.css';
+import '../assets/login.css';
 
 const contentStyle = {
 };
@@ -11,99 +11,65 @@ const Home = () => {
     <div style={{
       position: 'relative'
     }}>
-      <div className='home-banner'>
-      </div>
-      <div className='home-banner2'>
-        <h1
-          style={{
-            fontSize: '20px',
-            lineHeight: '70px',
-            color: '#ff630e',
-            fontWeight: '500',
-            marginTop: '10%',
-            letterSpacing: '2px'
-          }}
-        >KHỞI ĐẦU SỰ NGHIỆP CỦA BẠN</h1>
-        <p style={{
-          color: 'white',
-          marginBottom: '20px'
-        }}>
-          <span
-            style={{
-              fontSize: '70px',
-              lineHeight: '77px',
-              fontWeight: '700'
-            }}
-          >Trở thành lập trình viên chuyên nghiệp tại BSmart</span>
-        </p>
-        <p style={{ color: 'white', padding: ' 0 15%', lineHeight: '30px', marginBottom: '70px' }}>
-          Chúng tôi cung cấp các khoá học chất lượng cao để cải thiện các kỹ năng lập trình của bạn. Tất cả các giảng viên của chúng tôi đều có nhiều kinh nghiệm trong thực tế và giảng dạy.
-        </p>
-        <Link
-          style={{
-            padding: '20px 15px',
-            border: 'none',
-            borderRadius: '5px',
-            fontWeight: '500'
-          }}
-          className='btn-home'
-          to="/courses"
-        >
-          XEM KHÓA HỌC
-        </Link>
-      </div>
-      <div className='aboutus-banner'>
-        <div className='aboutus-overlay'>
-          <h1 style={{
-            fontSize: '45px',
-            lineHeight: '55px',
-            fontWeight: '700',
-            color: '#0e0a38',
-            marginBottom: '30px'
-          }}>Về chúng tôi</h1>
-          <div className='row' style={{ display: 'flex', padding: '0 7%' }}>
-            <div className='col-md-6 col-sm-12'>
-              <p style={{ fontSize: '20px', fontWeight: '500', textAlign: 'justify', lineHeight: '30px' }}>
-                BSmart khai thác nhu cầu tuyển dụng lập trình, kết nối việc làm tới doanh nghiệp và tích hợp các dự án với công nghệ mới nhất vào phương pháp đào tạo tích cực cho các học viên học xong có việc làm ngay. Chương trình giảng dạy được biên soạn may đo dành riêng cho các bạn Lập trình từ trái ngành hoặc đã có kiến thức theo cường độ cao, luôn được tinh chỉnh và tối ưu hóa theo thời gian bởi các thành viên sáng lập và giảng viên dày kinh nghiệm.
-              </p>
-              <div className='d-flex mt-3 justify-content-center'>
-                <Link
-                  style={{
-                    padding: '20px 15px',
-                    border: 'none',
-                    borderRadius: '5px',
-                    fontWeight: '500',
-                    marginBottom: '20px',
-                  }}
-                  className='btn-home'
-                  to="/register"
-                >
-                  XEM KHÓA HỌC
-                </Link>
-                <Link
-                  style={{
-                    padding: '20px 15px',
-                    border: 'none',
-                    borderRadius: '5px',
-                    fontWeight: '500',
-                    marginBottom: '20px',
-                    marginLeft: '20px'
-                  }}
-                  className='btn-home'
-                  to="/register"
-                >
-                  HỖ TRỢ TƯ VẤN
-                </Link>
-              </div>
+
+      <section className="banner">
+        <div className="container">
+          <div className="caption-content text-center">
+            <h4>Khởi đầu sự nghiệp của bạn</h4>
+            <h2>Trở thành lập trình viên chuyên nghiệp tại BSmart</h2>
+            <p>
+              Chúng tôi cung cấp các khoá học chất lượng cao để cải thiện các kỹ năng
+              lập trình của bạn. Tất cả các giảng viên của chúng tôi đều có nhiều kinh
+              nghiệm trong thực tế và giảng dạy.
+            </p>
+            <div className="mt-5 banner-control">
+              <Link href="/courses" className="btn btn-primary-custom-select">
+                Xem khoá học
+              </Link>
             </div>
-            <div className='col-md-6 col-sm-12'>
-              <div className='img-aboutus'>
-                <img style={{ width: '100%', borderRadius: '10px', boxShadow: '0 0 15px #000' }} src="../../public/assets/images/banner-2.jpg" alt="rere" />
+          </div>
+        </div>
+      </section>
+
+      <section className="aboutus" id="aboutus">
+        <div className="container">
+          <div className="aboutus-content">
+            <h2 className="text-center section-heading section-heading-home">
+              Về chúng tôi
+            </h2>
+            <div className="row btn-aboutus-home-page">
+              <div className="col-md-6 col-sm-12 container-select-course-mobile">
+                <p className="about-description">
+                  BSmart khai thác nhu cầu tuyển dụng lập trình, kết nối việc làm tới
+                  doanh nghiệp và tích hợp các dự án với công nghệ mới nhất vào phương
+                  pháp đào tạo tích cực cho các học viên học xong có việc làm ngay.
+                  Chương trình giảng dạy được biên soạn may đo dành riêng cho các bạn
+                  Lập trình từ trái ngành hoặc đã có kiến thức theo cường độ cao, luôn
+                  được tinh chỉnh và tối ưu hóa theo thời gian bởi các thành viên sáng
+                  lập và giảng viên dày kinh nghiệm.
+                </p>
+                <div className="d-flex mt-3 justify-content-center">
+                  <Link
+                    href="/courses"
+                    className="btn btn-primary-custom-select btn-primary-custom-select-mobile"
+                  >
+                    Xem khoá học
+                  </Link>
+                  <button className="btn btn-outline-secondary-custom btn-outline-secondary-custom-laptop ms-3">
+                    Hỗ trợ tư vấn
+                  </button>
+                </div>
+              </div>
+              <div className="col-md-6 col-sm-12">
+                <div className="banner-aboutus">
+                  <img src="/assets/images/banner-2.jpg" alt="Hinh anh" />
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
       <div className='advantages-page' style={{ marginBottom: '60px' }}>
         <div className='container'>
           <h2 class="section-heading text-center section-heading-title-mobile">Điểm ưu việt tại BSmart</h2>

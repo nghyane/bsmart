@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import './register.css';
+import '../assets/register.css';
 import { useState } from "react";
 
 const Register = () => {
@@ -46,7 +46,7 @@ const Register = () => {
                     <a style={{
                         color: 'white'
                     }} href="#">Trang chủ</a>
-                    <span> > </span>
+                    <span> &gt; </span>
                     <span>đăng ký</span>
                 </p>
             </div>

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./lms.css";
+import "../assets/lms.css";
 import { RiFileChart2Fill } from "react-icons/ri";
 const LearningManagementSystem = () => {
   return (
@@ -22,7 +22,6 @@ const LearningManagementSystem = () => {
         </div>
       </section>
 
-      {/* section 2 */}
       <section className="section2">
         <div className="container">
           <div className="row">

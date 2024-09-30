@@ -5,7 +5,7 @@ import { Outlet } from "react-router-dom";
 
 const MainLayout = () => {
   return (
-    <div className="wrapper home-wrapper">
+    <div className="wrapper home-wrapper  blog-detail-wrapper">
       <Header/>
       
       <Outlet/>

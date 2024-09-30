@@ -1,5 +1,5 @@
 import React from "react";
-import "./Mentorprofile.css";
+import "../assets/Mentorprofile.css";
 import { Link } from "react-router-dom";
 const MentorProfile = () => {
   return (

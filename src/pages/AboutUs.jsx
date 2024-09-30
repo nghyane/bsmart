@@ -3,7 +3,7 @@ import React from 'react';
 const AboutUs = () => {
   return (
     <div>
-      {/* Start Aboutus */}
+      
       <section className="banner__aboutus ">
         <div className="container  " >
           <div className="caption-content text-center">
@@ -21,7 +21,7 @@ const AboutUs = () => {
 
       {/* About Us Section */}
       <section className="aboutus1 ">
-        <div className="container_2">
+        <div className="container">
           <div className="aboutus-content1">
             <div className="row">
               <div className="col-md-6 col-sm-12 content-aboutus-1">
