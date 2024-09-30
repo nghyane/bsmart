@@ -1,0 +1,70 @@
+.banner__lms {
+    background-image: url(../../assets/images/banner-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 110px 0 100px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 50px;
+  }
+  .banner__lms::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgba(5, 1, 51, 0.7);
+  }
+  .link:hover {
+    color: #ff630e;
+    transition: 500ms;
+  }
+
+.mentor-info{
+    padding: 20px 20px 50px;
+    box-shadow: 0px 0px 15px 0px #ff620e7c;
+    border-radius: 10px;
+    text-align: center;
+}
+.mentor-info:hover{
+    box-shadow: 0px 0px 15px 0px rgba(5, 1, 51, 0.7);
+    transition: 1.5s;
+}
+.mentor-img{
+    background-image: url(/assets/images/overlay-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 50px 51px 30px;
+    border-radius: 2%;
+}
+.mentor-img img{
+    border-radius: 90%;
+}
+.mentor-details h4{
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 20px;
+}
+.social-list{
+    display: flex;
+    justify-content: space-evenly;
+}
+.social-list li{
+    width: 20%;
+    background-color: #ff630e;
+    border-radius: 45% 72%;
+    margin-bottom: 1rem;
+}
+.social-list li:hover{
+    background-color: rgba(5, 1, 51, 0.7);
+}
+.social-list li i{
+    color: aliceblue;
+}
+.contact-info span {
+color: grey;
+}
+
